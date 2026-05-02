@@ -28,3 +28,15 @@ jobs:
         with:
           name: lavajato-exe
           path: dist
+          "build": {
+  "appId": "com.lavajato.app",
+  "productName": "LavaJato Pro",
+  "files": [
+    "dist/**/*",
+    "electron/**/*",
+    "package.json"
+  ],
+  "win": {
+    "target": "nsis"
+  }
+}
